@@ -82,7 +82,11 @@ Understanding what you are entering is the first step toward better insight.
 pip install -r requirements.txt
 
 # Sync the Hadoop-simulated baselines (Crucial Step!)
-python3 analytics.py
+cd C:\hadoop\sbin
+start-dfs.cmd
+
+Go to path where project stored and run
+spark-submit analytics.py
 
 # Launch the Application
 python app.py
