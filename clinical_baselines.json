@@ -1,0 +1,477 @@
+{
+    "Breast Cancer": {
+        "baselines": {
+            "Benign": {
+                "Radius Mean": {
+                    "mean": 12.14652380952381,
+                    "std": 1.7805116461410397,
+                    "min": 6.981,
+                    "max": 17.85,
+                    "unit": "mm"
+                },
+                "Texture Mean": {
+                    "mean": 17.914761904761892,
+                    "std": 3.9951245936759108,
+                    "min": 9.71,
+                    "max": 33.81,
+                    "unit": "gray"
+                },
+                "Perim. Mean": {
+                    "mean": 78.07540616246497,
+                    "std": 11.807437580108742,
+                    "min": 43.79,
+                    "max": 114.6,
+                    "unit": "mm"
+                },
+                "Area Mean": {
+                    "mean": 462.79019607843145,
+                    "std": 134.2871181470596,
+                    "min": 143.5,
+                    "max": 992.1,
+                    "unit": "mm\u00b2"
+                },
+                "Smooth. Mean": {
+                    "mean": 0.09247764705882354,
+                    "std": 0.013446077330274126,
+                    "min": 0.05263,
+                    "max": 0.1634,
+                    "unit": "ratio"
+                }
+            },
+            "Malignant": {
+                "Radius Mean": {
+                    "mean": 17.46283018867925,
+                    "std": 3.2039711007793636,
+                    "min": 10.95,
+                    "max": 28.11,
+                    "unit": "mm"
+                },
+                "Texture Mean": {
+                    "mean": 21.60490566037735,
+                    "std": 3.779469920776342,
+                    "min": 10.38,
+                    "max": 39.28,
+                    "unit": "gray"
+                },
+                "Perim. Mean": {
+                    "mean": 115.36537735849062,
+                    "std": 21.854653291073717,
+                    "min": 71.9,
+                    "max": 188.5,
+                    "unit": "mm"
+                },
+                "Area Mean": {
+                    "mean": 978.3764150943397,
+                    "std": 367.93797760667036,
+                    "min": 361.6,
+                    "max": 2501.0,
+                    "unit": "mm\u00b2"
+                },
+                "Smooth. Mean": {
+                    "mean": 0.10289849056603775,
+                    "std": 0.012608235501058319,
+                    "min": 0.07371,
+                    "max": 0.1447,
+                    "unit": "ratio"
+                }
+            }
+        },
+        "features": [
+            [
+                "radius1",
+                "Radius Mean",
+                "mm"
+            ],
+            [
+                "texture1",
+                "Texture Mean",
+                "gray"
+            ],
+            [
+                "perimeter1",
+                "Perim. Mean",
+                "mm"
+            ],
+            [
+                "area1",
+                "Area Mean",
+                "mm\u00b2"
+            ],
+            [
+                "smoothness1",
+                "Smooth. Mean",
+                "ratio"
+            ]
+        ]
+    },
+    "Cervical Cancer": {
+        "baselines": {
+            "High Risk": {
+                "Patient Age": {
+                    "mean": 28.636363636363637,
+                    "std": 8.884784405903945,
+                    "min": 16.0,
+                    "max": 52.0,
+                    "unit": "yrs"
+                },
+                "Partners": {
+                    "mean": 2.5185185185185186,
+                    "std": 1.2847544474399113,
+                    "min": 1.0,
+                    "max": 6.0,
+                    "unit": "count"
+                },
+                "Pregnancies": {
+                    "mean": 2.5416666666666665,
+                    "std": 1.3201923350097289,
+                    "min": 0.0,
+                    "max": 6.0,
+                    "unit": "count"
+                },
+                "Smoking Yrs": {
+                    "mean": 2.1901291279444446,
+                    "std": 6.27301088989355,
+                    "min": 0.0,
+                    "max": 34.0,
+                    "unit": "yrs"
+                }
+            },
+            "Low Risk": {
+                "Patient Age": {
+                    "mean": 26.696139476961395,
+                    "std": 8.462316204892982,
+                    "min": 13.0,
+                    "max": 84.0,
+                    "unit": "yrs"
+                },
+                "Partners": {
+                    "mean": 2.5282776349614395,
+                    "std": 1.69178417925497,
+                    "min": 1.0,
+                    "max": 28.0,
+                    "unit": "count"
+                },
+                "Pregnancies": {
+                    "mean": 2.2586206896551726,
+                    "std": 1.4542920702712065,
+                    "min": 0.0,
+                    "max": 11.0,
+                    "unit": "count"
+                },
+                "Smoking Yrs": {
+                    "mean": 1.1534736039519593,
+                    "std": 3.892840249287577,
+                    "min": 0.0,
+                    "max": 37.0,
+                    "unit": "yrs"
+                }
+            }
+        },
+        "features": [
+            [
+                "Age",
+                "Patient Age",
+                "yrs"
+            ],
+            [
+                "Number of sexual partners",
+                "Partners",
+                "count"
+            ],
+            [
+                "Num of pregnancies",
+                "Pregnancies",
+                "count"
+            ],
+            [
+                "Smokes (years)",
+                "Smoking Yrs",
+                "yrs"
+            ]
+        ]
+    },
+    "Lung Cancer": {
+        "baselines": {
+            "Type 1": {
+                "Lung Var A": {
+                    "mean": 0.0,
+                    "std": 0.1,
+                    "min": 0.0,
+                    "max": 0.0,
+                    "unit": "idx"
+                },
+                "Lung Var B": {
+                    "mean": 2.7777777777777777,
+                    "std": 0.4409585518440984,
+                    "min": 2.0,
+                    "max": 3.0,
+                    "unit": "idx"
+                },
+                "Lung Var C": {
+                    "mean": 2.111111111111111,
+                    "std": 1.0540925533894598,
+                    "min": 0.0,
+                    "max": 3.0,
+                    "unit": "idx"
+                },
+                "Lung Var D": {
+                    "mean": 1.375,
+                    "std": 0.5175491695067657,
+                    "min": 1.0,
+                    "max": 2.0,
+                    "unit": "idx"
+                },
+                "Lung Var E": {
+                    "mean": 0.2222222222222222,
+                    "std": 0.44095855184409843,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "unit": "idx"
+                }
+            },
+            "Type 3": {
+                "Lung Var A": {
+                    "mean": 0.0,
+                    "std": 0.1,
+                    "min": 0.0,
+                    "max": 0.0,
+                    "unit": "idx"
+                },
+                "Lung Var B": {
+                    "mean": 2.2,
+                    "std": 0.42163702135578396,
+                    "min": 2.0,
+                    "max": 3.0,
+                    "unit": "idx"
+                },
+                "Lung Var C": {
+                    "mean": 2.5,
+                    "std": 0.7071067811865475,
+                    "min": 1.0,
+                    "max": 3.0,
+                    "unit": "idx"
+                },
+                "Lung Var D": {
+                    "mean": 1.4,
+                    "std": 0.5163977794943222,
+                    "min": 1.0,
+                    "max": 2.0,
+                    "unit": "idx"
+                },
+                "Lung Var E": {
+                    "mean": 0.3,
+                    "std": 0.48304589153964794,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "unit": "idx"
+                }
+            },
+            "Type 2": {
+                "Lung Var A": {
+                    "mean": 0.07692307692307693,
+                    "std": 0.2773500981126145,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "unit": "idx"
+                },
+                "Lung Var B": {
+                    "mean": 2.230769230769231,
+                    "std": 0.5991446895152781,
+                    "min": 1.0,
+                    "max": 3.0,
+                    "unit": "idx"
+                },
+                "Lung Var C": {
+                    "mean": 1.6153846153846154,
+                    "std": 1.12089707663561,
+                    "min": 0.0,
+                    "max": 3.0,
+                    "unit": "idx"
+                },
+                "Lung Var D": {
+                    "mean": 1.4,
+                    "std": 0.6992058987801011,
+                    "min": 0.0,
+                    "max": 2.0,
+                    "unit": "idx"
+                },
+                "Lung Var E": {
+                    "mean": 0.3076923076923077,
+                    "std": 0.4803844614152614,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "unit": "idx"
+                }
+            }
+        },
+        "features": [
+            [
+                "Attribute1",
+                "Lung Var A",
+                "idx"
+            ],
+            [
+                "Attribute2",
+                "Lung Var B",
+                "idx"
+            ],
+            [
+                "Attribute3",
+                "Lung Var C",
+                "idx"
+            ],
+            [
+                "Attribute4",
+                "Lung Var D",
+                "idx"
+            ],
+            [
+                "Attribute5",
+                "Lung Var E",
+                "idx"
+            ]
+        ]
+    },
+    "Chronic Kidney Disease": {
+        "baselines": {
+            "Negative": {
+                "Patient Age": {
+                    "mean": 46.51677852348993,
+                    "std": 15.63113837342838,
+                    "min": 12.0,
+                    "max": 80.0,
+                    "unit": "yrs"
+                },
+                "Blood Pressure": {
+                    "mean": 71.35135135135135,
+                    "std": 8.543498036849092,
+                    "min": 60.0,
+                    "max": 80.0,
+                    "unit": "mmHg"
+                },
+                "Blood Glucose": {
+                    "mean": 107.72222222222223,
+                    "std": 18.56474003722036,
+                    "min": 70.0,
+                    "max": 140.0,
+                    "unit": "mgs/dl"
+                },
+                "Blood Urea": {
+                    "mean": 32.798611111111114,
+                    "std": 11.450458726640825,
+                    "min": 10.0,
+                    "max": 50.0,
+                    "unit": "mgs/dl"
+                },
+                "Serum Creatinine": {
+                    "mean": 0.8689655172413793,
+                    "std": 0.25509182480130516,
+                    "min": 0.4,
+                    "max": 1.2,
+                    "unit": "mgs/dl"
+                }
+            },
+            "Positive": {
+                "Patient Age": {
+                    "mean": 54.425,
+                    "std": 17.411419568224566,
+                    "min": 2.0,
+                    "max": 90.0,
+                    "unit": "yrs"
+                },
+                "Blood Pressure": {
+                    "mean": 79.70588235294117,
+                    "std": 15.244755861793221,
+                    "min": 50.0,
+                    "max": 180.0,
+                    "unit": "mmHg"
+                },
+                "Blood Glucose": {
+                    "mean": 175.52380952380952,
+                    "std": 92.47641315601933,
+                    "min": 22.0,
+                    "max": 490.0,
+                    "unit": "mgs/dl"
+                },
+                "Blood Urea": {
+                    "mean": 72.65617021276596,
+                    "std": 58.72295662551997,
+                    "min": 1.5,
+                    "max": 391.0,
+                    "unit": "mgs/dl"
+                },
+                "Serum Creatinine": {
+                    "mean": 4.430720338983049,
+                    "std": 6.977209030972375,
+                    "min": 0.5,
+                    "max": 76.0,
+                    "unit": "mgs/dl"
+                }
+            },
+            "ckd\t": {
+                "Patient Age": {
+                    "mean": 68.5,
+                    "std": 4.949747468305833,
+                    "min": 65.0,
+                    "max": 72.0,
+                    "unit": "yrs"
+                },
+                "Blood Pressure": {
+                    "mean": 70.0,
+                    "std": 14.142135623730951,
+                    "min": 60.0,
+                    "max": 80.0,
+                    "unit": "mmHg"
+                },
+                "Blood Glucose": {
+                    "mean": 164.5,
+                    "std": 38.890872965260115,
+                    "min": 137.0,
+                    "max": 192.0,
+                    "unit": "mgs/dl"
+                },
+                "Blood Urea": {
+                    "mean": 41.0,
+                    "std": 33.94112549695428,
+                    "min": 17.0,
+                    "max": 65.0,
+                    "unit": "mgs/dl"
+                },
+                "Serum Creatinine": {
+                    "mean": 2.55,
+                    "std": 1.2020815280171306,
+                    "min": 1.7,
+                    "max": 3.4,
+                    "unit": "mgs/dl"
+                }
+            }
+        },
+        "features": [
+            [
+                "age",
+                "Patient Age",
+                "yrs"
+            ],
+            [
+                "bp",
+                "Blood Pressure",
+                "mmHg"
+            ],
+            [
+                "bgr",
+                "Blood Glucose",
+                "mgs/dl"
+            ],
+            [
+                "bu",
+                "Blood Urea",
+                "mgs/dl"
+            ],
+            [
+                "sc",
+                "Serum Creatinine",
+                "mgs/dl"
+            ]
+        ]
+    }
+}
